@@ -55,3 +55,5 @@ titles = [
   )
 end
 
+Office.create(building_id: 1, company_id: 1, floor: 10)
+
