@@ -1,0 +1,4 @@
+<%@buildings.each do |building|%>
+<h1><%=link_to building.name, building_path(building)%></h1>
+<h1>Available Floors: <%=building.format_available_floors%> </h1><br>
+<%end%>

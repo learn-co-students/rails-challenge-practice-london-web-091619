@@ -1,0 +1,27 @@
+<%=form_for(@building) do |f|%>
+
+<ul>
+    <% if @building.errors.any? %>
+        <%= @building.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    <% end %>
+</ul>
+
+<%=f.label :name%>
+<%=f.text_field :name%>
+
+<%=f.label :country%>
+<%=f.text_field :country%>
+
+<%=f.label :address%>
+<%=f.text_field :address%>
+
+<%=f.label :rent_per_floor%>
+<%=f.text_field :rent_per_floor%>
+
+<%=f.label :number_of_floors%>
+<%=f.text_field :number_of_floors%>
+
+<%=f.submit%>
+<%end%>
